@@ -16,7 +16,7 @@ body {
 .container {
     width: 18rem;
     background-color: #FFFFFF;
-    margin: 6rem auto;
+    margin: 15rem auto;
     padding: 1.5rem;
     text-align: center;
     border-radius: 0.5rem;
@@ -57,4 +57,106 @@ button {
     background-color: #e45245;
     color: #FFFFFF;
     padding: 0.6em;
+}
+
+.header {
+    background-color: #FFFFFF;
+    border-bottom: 0.1rem solid #DDE9F2;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    color: #333333;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #223e8f;
+    margin-left: 0.8rem;
+    font-size: 1rem;
+}
+
+.menu a.activo {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contenido {
+    min-height: calc(100vh - 7rem);
+    padding: 1rem;
+}
+
+.contenido .container {
+    margin: 3rem auto;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    border-top: 0.1rem solid #DDE9F2;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.texto-gris {
+    color: #777777;
+    font-size: 0.95rem;
+}
+
+.boton-link {
+    display: block;
+    margin-top: 0.2rem;
+    text-decoration: none;
+    background-color: #4168df;
+    color: #FFFFFF;
+    padding: 0.6em;
+}
+
+.caja {
+    text-align: left;
+    border: 0.1rem solid #DDE9F2;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #FFFFFF;
+}
+
+.caja p {
+    margin-bottom: 0.5rem;
+}
+
+.lista {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.item {
+    border: 0.1rem solid #DDE9F2;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    background-color: #FFFFFF;
+}
+
+.item h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.area-texto {
+    width: 100%;
+    min-height: 7rem;
+    padding: 0.5em;
+    margin-bottom: 0.8em;
+    border: 0.1rem solid #CCCCCC;
+    resize: vertical;
 }
