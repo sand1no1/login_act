@@ -7,13 +7,18 @@
 <body>
     <div class="container">
         <h2>Iniciar Sesión</h2>
-        <form action="inicio.html">
-            <input type="text" placeholder="Usuario" required>
-            <input type="password" placeholder="Contraseña" required>
+        <form id="loginForm">
+            <input type="text" id="loginUser" placeholder="Usuario" required>
+            <input type="password" id="loginPass" placeholder="Contraseña" required>
             <button type="submit">Ingresar</button>
         </form>
+
+        <p id="loginMsg" class="texto-gris"></p>
+
         <p class="texto-gris"><br>¿No tienes cuenta?</p>
         <a href="signup.html" class="boton-link">Crear cuenta</a>
     </div>
+
+    <script src="scripts/login.js"></script>
 </body>
 </html>
