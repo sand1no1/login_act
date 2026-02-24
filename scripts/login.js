@@ -20,5 +20,7 @@ document.getElementById("loginForm").addEventListener("submit", (e) => {
     }
 
     msg.textContent = "";
+
+    localStorage.setItem("userLoggedIn", "true");
     location.href = "inicio.html";
 });
