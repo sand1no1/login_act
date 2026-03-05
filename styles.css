@@ -161,3 +161,121 @@ button {
     border: 0.1rem solid #CCCCCC;
     resize: vertical;
 }
+
+body.pokedex .contenido{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+    justify-items: center;
+}
+
+body.pokedex .pokemon-card{
+    width: 100%;
+    height: 15rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.08s ease;
+}
+
+body.pokedex .pokemon-card:active{
+    transform: scale(0.99);
+}
+
+body.pokedex .pokemon-card img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+body.pokedex .pokemon-card h2{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+}
+
+body.pokedex .pagination{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+body.pokedex .pagination button{
+    width: auto;
+    padding: 0.4rem 0.7rem;
+    border-radius: 0.4rem;
+}
+
+body.pokedex .pagination button.activo {
+    font-weight: bold;
+    outline: 2px solid #1e3781;
+}
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 1rem;
+}
+
+.overlay.is-open{
+    display: flex;
+}
+
+.modal{
+    background: #fff;
+    border-radius: 0.75rem;
+    max-width: 520px;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+.modal__close{
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    width: auto;
+    background-color: #e45245;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.modal__close:hover{
+    background-color: #c93b30;
+}
+
+.modal__img{
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+body.no-scroll{
+    overflow: hidden;
+}
