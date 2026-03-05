@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pokedex">
+    <header></header>
+
+    <div class="caja" style="max-width: 900px; width:100%;">
+        <p><strong>Filtros</strong></p>
+
+        <input id="searchName" type="text" placeholder="Buscar por nombre (ej: magika)" />
+        <input id="searchId" type="number" placeholder="Buscar por ID (ej: 129)" />
+
+        <select id="typeSelect" style="margin-bottom: 0.6rem;">
+            <option value="">-- Filtrar por tipo --</option>
+        </select>
+
+        <button id="clearFilters" type="button">Limpiar filtros</button>
+    </div>
+
+    <main class="contenido"></main>
+    <div id="pagination" class="pagination"></div>
+
+    <footer></footer>
+
+    <div id="overlay" class="overlay">
+        <div class="modal" role="dialog">
+            <button id="closeModal" class="modal__close">Cerrar</button>
+
+            <h2 id="mName"></h2>
+            <img id="mImg" class="modal__img" alt="" />
+
+            <p><strong>Id:</strong> <span id="mId"></span></p>
+            <p><strong>Tipo(s):</strong> <span id="mTypes"></span></p>
+            <p><strong>Descripción:</strong> <span id="mDesc"></span></p>
+        </div>
+    </div>
+
+    <script src="scripts/login_protection.js"></script>
+    <script src="scripts/header_footer.js"></script>
+    <script src="scripts/pokedex.js"></script>
+</body>
+</html>
