@@ -126,7 +126,7 @@ button {
     border: 0.1rem solid #DDE9F2;
     border-radius: 0.5rem;
     padding: 1rem;
-    margin-top: 1rem;
+    margin: 1rem auto auto auto;
     background-color: #FFFFFF;
 }
 
