@@ -11,6 +11,7 @@ header.innerHTML =
         <a href="perfil.html"${title === "Perfil" ? ` class="activo"` : ""}>Perfil</a>
         <a href="servicios.html"${title === "Servicios" ? ` class="activo"` : ""}>Servicios</a>
         <a href="pokemon.html"${title === "Pokemon" ? ` class="activo"` : ""}>Pokemon</a>
+        <a href="pokedex.html"${title === "Pokedex" ? ` class="activo"` : ""}>Pokedex</a>
     </nav>
 `;
 
