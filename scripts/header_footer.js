@@ -12,6 +12,7 @@ header.innerHTML =
         <a href="servicios.html"${title === "Servicios" ? ` class="activo"` : ""}>Servicios</a>
         <a href="pokemon.html"${title === "Pokemon" ? ` class="activo"` : ""}>Pokemon</a>
         <a href="pokedex.html"${title === "Pokedex" ? ` class="activo"` : ""}>Pokedex</a>
+        <a href="pokefight.html"${title === "Pokefight" ? ` class="activo"` : ""}>Pokefight</a>
     </nav>
 `;
 
