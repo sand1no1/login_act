@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokefight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header></header>
+
+    <main class="contenido">
+        <section class="caja">
+            <h2>Pokefight</h2>
+            <p>Selecciona dos Pokemon, define los puntos de vida y la cantidad máxima de movimientos.</p>
+
+            <div class="battle-grid">
+                <div class="selector-box">
+                    <h3>Pokemon 1</h3>
+                    <input id="pokemon1Input" type="text" placeholder="Nombre o ID (ej: magikarp o 129)">
+                    <button id="loadPokemon1" type="button">Cargar Pokemon 1</button>
+
+                    <div id="pokemon1Card" style="text-align: center;">
+                        <p class="texto-gris" style="text-align: center; margin-top: 0.7rem;">Aún no cargado</p>
+                    </div>
+                </div>
+
+                <div class="selector-box">
+                    <h3>Pokemon 2</h3>
+                    <input id="pokemon2Input" type="text" placeholder="Nombre o ID (ej: charmander o 4)">
+                    <button id="loadPokemon2" type="button">Cargar Pokemon 2</button>
+
+                    <div id="pokemon2Card" style="text-align: center;">
+                        <p class="texto-gris" style="text-align: center; margin-top: 0.7rem;">Aún no cargado</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="battle-form-row">
+                <div>
+                    <label for="initialHp"><strong>Vida inicial</strong></label>
+                    <input id="initialHp" type="number" min="1" max="500" step="1" value="100" required>
+                </div>
+
+                <div>
+                    <label for="maxTurns"><strong>Máximo de movimientos totales</strong></label>
+                    <input id="maxTurns" type="number" min="1" max="50" step="1" value="6" required>
+                </div>
+            </div>
+
+            <button id="startBattle" type="button">Iniciar batalla</button>
+        </section>
+
+        <section>
+            <div class="battle-arena">
+                <div class="arena-fighter" id="arenaP1">
+                    <h3 id="arenaP1Name">Pokemon 1</h3>
+                    <img id="arenaP1Img" src="" alt="">
+                    <div>
+                        <div>
+                            <span>Vida</span>
+                            <span id="arenaP1HpText">0 / 0</span>
+                        </div>
+                        <div class="hp-bar">
+                            <div id="arenaP1HpBar" class="hp-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arena-vs">VS</div>
+
+                <div class="arena-fighter" id="arenaP2">
+                    <h3 id="arenaP2Name">Pokemon 2</h3>
+                    <img id="arenaP2Img" src="" alt="">
+                    <div>
+                        <div>
+                            <span>Vida</span>
+                            <span id="arenaP2HpText">0 / 0</span>
+                        </div>
+                        <div class="hp-bar">
+                            <div id="arenaP2HpBar" class="hp-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caja battle-log-box">
+                <h3>Registro de la batalla</h3>
+                <div id="battleStatus" class="texto-gris">
+                    Esperando configuración...
+                </div>
+                <div id="battleLog"></div>
+            </div>
+
+            <div id="winnerBox" class="caja winner-box winner-box--hidden">
+                <p>Ganador</p>
+                <img id="winnerImg" class="winner-img" src="" alt="">
+                <h2 id="winnerName"></h2>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="scripts/login_protection.js"></script>
+    <script src="scripts/header_footer.js"></script>
+    <script src="scripts/pokefight.js"></script>
+</body>
+</html>
